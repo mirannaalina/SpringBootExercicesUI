@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Add Car</title>
+</head>
+<body>
+
+<a href="http://localhost:8080/car/add">Add car</a>
+
+<ul>
+
+    <li th:each="car: ${cars}">
+        <span th:text="${car.getName()}"></span>
+    </li>
+
+</ul>
+
+
+</body>
+</html>
